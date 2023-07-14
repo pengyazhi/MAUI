@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projMauiDemo.Resources.View.PgClickDemo"
+             Title="Pg一元二次方程式">
+    <VerticalStackLayout>
+        <Label 
+            Text="一元二次方程式計算器"
+            FontSize="30"
+            TextColor="White"
+            BackgroundColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name ="entryA" FontSize="30"  Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+            <Label Text="X2+" FontSize="30" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+            <Entry x:Name ="entryB" FontSize="30" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+            <Label Text="X + " FontSize="30" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+            <Entry x:Name ="entryC" FontSize="30" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+            <Label Text="= 0 " FontSize="30" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Margin="10,0,10,0" Text="確定" FontSize="25" Clicked="btnCalculate_Clicked" Background="#BEBEBE	"/>
+            <Label HorizontalOptions="FillAndExpand" x:Name="answer" Text="解答 : " FontSize="15" VerticalTextAlignment="Center" TextColor="#5B5B5B"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

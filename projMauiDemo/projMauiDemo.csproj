@@ -49,7 +49,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\first.png" />
 	  <None Remove="Resources\Images\flower.jpg" />
+	  <None Remove="Resources\Images\last.png" />
+	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Resources\Images\next.png" />
+	  <None Remove="Resources\Images\previous.png" />
+	  <None Remove="Resources\Images\search.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -63,6 +69,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\View\Pg1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\View\Pg2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\View\PgCalc.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\View\PgEditor.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\View\PgLotto.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

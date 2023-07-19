@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\QNote\\codes\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj": {}
+    "C:\\MAUI\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj": {}
   },
   "projects": {
-    "C:\\QNote\\codes\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj": {
+    "C:\\MAUI\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\QNote\\codes\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj",
+        "projectUniqueName": "C:\\MAUI\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj",
         "projectName": "projMauiDemo",
-        "projectPath": "C:\\QNote\\codes\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj",
+        "projectPath": "C:\\MAUI\\slnMauiDemo\\projMauiDemo\\projMauiDemo.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\QNote\\codes\\slnMauiDemo\\projMauiDemo\\obj\\",
+        "outputPath": "C:\\MAUI\\slnMauiDemo\\projMauiDemo\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

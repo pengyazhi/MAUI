@@ -12,70 +12,124 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = projMauiDemo
-build_property.ProjectDir = C:\QNote\codes\slnMauiDemo\projMauiDemo\
+build_property.ProjectDir = C:\MAUI\slnMauiDemo\projMauiDemo\
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/App.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/AppShell.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/MainPage.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/Styles/Colors.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/Styles/Styles.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/Pg1.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/Pg1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.Pg1.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\Pg1.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\Pg1.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/Pg2.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/Pg2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.Pg2.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\Pg2.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\Pg2.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/PgCalc.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgBindingByCode.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgBindingByCode.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgBindingByCode.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgBindingByCode.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgBindingByXaml.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgBindingByXaml.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgBindingByXaml.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgBindingByXaml.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgCalc.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgCalc.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\PgCalc.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\PgCalc.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/PgClickDemo.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgClickDemo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgClickDemo.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\PgClickDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\PgClickDemo.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/PgEditor.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgEditor.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgEditor.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\PgEditor.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\PgEditor.xaml
 
-[C:/QNote/codes/slnMauiDemo/projMauiDemo/Resources/View/PgLotto.xaml]
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgFile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgFile.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgFile.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgFile.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgHttp.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgHttp.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgHttp.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgHttp.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgKeyword.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgKeyword.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgKeyword.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgKeyword.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgList.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgList.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgList.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgLotto.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgLotto.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\View\PgLotto.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\View\PgLotto.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgPreferencesDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgPreferencesDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgPreferencesDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgPreferencesDemo.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgToDoEditor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgToDoEditor.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgToDoEditor.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgToDoEditor.xaml
+
+[C:/MAUI/slnMauiDemo/projMauiDemo/Resources/View/PgTodoList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projMauiDemo.Resources.View.PgTodoList.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\View\PgTodoList.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\View\PgTodoList.xaml

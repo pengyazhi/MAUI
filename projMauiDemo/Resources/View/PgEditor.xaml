@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:crm ="clr-namespace:projMauiDemo.Resources.ViewModels"
              x:Class="projMauiDemo.Resources.View.PgEditor"
              Title="PgEditor">
+    <ContentPage.BindingContext>
+        <crm:CCustomerViewModel/>
+    </ContentPage.BindingContext>
     <VerticalStackLayout>
         <Label 
-            Text="客戶資料一覽表"
+            Text="客戶資料管理表"
             VerticalOptions="Center" 
             HorizontalOptions="FillAndExpand"
-            BackgroundColor="SteelBlue"
-            TextColor="Wheat"
+            Background="#005AB5	"
+            TextColor="#FFFCEC"
             FontSize="40"
             HorizontalTextAlignment="Center"/>
         <Label
@@ -19,7 +23,8 @@
         <Entry
             x:Name="txtID"
             HorizontalOptions="FillAndExpand"
-            FontSize="30"/>
+            FontSize="30"
+            Text="{Binding current.id,Mode=TwoWay}"/>
         <Label
             Text="姓名"
             FontSize="30"
@@ -27,7 +32,8 @@
         <Entry
             x:Name="txtName"
             HorizontalOptions="FillAndExpand"
-            FontSize="30"/>
+            FontSize="30"
+            Text="{Binding current.name,Mode=TwoWay}"/><!--繫結位置, (TwoWay是指畫面跟source的值都會改變)-->
         <Label
             Text="電話"
             FontSize="30"
@@ -35,7 +41,8 @@
         <Entry
             x:Name="txtPhone"
             HorizontalOptions="FillAndExpand"
-            FontSize="30"/>
+            FontSize="30"
+            Text="{Binding current.phone,Mode=TwoWay}"/>
         <Label
             Text="電子郵件"
             FontSize="30"
@@ -43,7 +50,8 @@
         <Entry
             x:Name="txtEmail"
             HorizontalOptions="FillAndExpand"
-            FontSize="30"/>
+            FontSize="30"
+            Text="{Binding current.email,Mode=TwoWay}"/>
         <Label
             Text="地址"
             FontSize="30"
@@ -51,7 +59,8 @@
         <Entry
             x:Name="txtAddress"
             HorizontalOptions="FillAndExpand"
-            FontSize="30"/>
+            FontSize="30"
+            Text="{Binding current.address,Mode=TwoWay}"/>
         <StackLayout Orientation="Horizontal">
             <ImageButton
                 Source="first"
@@ -71,10 +80,12 @@
                 Clicked="btnLast_Clicked"/>
             <ImageButton
                 Source="search"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand"
+                Clicked="btnSearchClick"/>
             <ImageButton
                 Source="menu"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand"
+                Clicked="btnList_Clicked"/>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

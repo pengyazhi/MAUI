@@ -1,0 +1,1 @@
+C:\MAUI\slnMauiDemo\projMauiDemo\projMauiDemo.csproj;x64

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projMauiDemo.Resources.View.PgKeyword"
+             Title="PgKeyword">
+    <VerticalStackLayout>
+        <Label 
+            Text="關鍵字" 
+           VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="FillAndExpand" 
+            Background="#005AB5	"
+            TextColor="#FFFCEC"
+            FontSize="40"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Entry
+                x:Name="txtKeyword"
+                FontSize="30"
+                  HorizontalOptions="FillAndExpand"/>
+            <ImageButton
+            Source="search"
+                Clicked="btnConfirm_Clicked"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

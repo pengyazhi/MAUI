@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projMauiDemo.Resources.View.PgPreferencesDemo"
+             Title="PgPreferencesDemo">
+    <VerticalStackLayout>
+        <Label 
+            Text="PreferencesDemo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="30"/>
+        <Label 
+            Text="請輸入資料"
+            FontSize="25"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Start"
+            HorizontalOptions="FillAndExpand"/>
+        <Entry
+            x:Name="txtSet"
+            FontSize="25"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Start"
+            HorizontalOptions="FillAndExpand"/>
+        <StackLayout Orientation="Horizontal">
+            <Button
+                FontSize="25"
+                Clicked="btnSave_Clicked"
+                Text="Save"
+                HorizontalOptions="FillAndExpand"
+                Margin="3"/>
+            <Button
+                FontSize="25"
+                Clicked="btnRead_Clicked"
+                Text="Read"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <Label
+            x:Name="lblGet"
+            Text="No Data"
+            FontSize="25"
+            HorizontalTextAlignment="Start"
+            HorizontalOptions="FillAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>

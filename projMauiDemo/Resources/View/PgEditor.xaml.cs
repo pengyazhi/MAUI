@@ -1,75 +1,93 @@
 using projMauiDemo.Resources.Models;
+using projMauiDemo.Resources.ViewModels;
 
 namespace projMauiDemo.Resources.View;
 
 public partial class PgEditor : ContentPage
 {
-    private int _position = 0;
-    private List<CCustomers> _list = new List<CCustomers>();
+    CCustomerViewModel _vm = null;
     public PgEditor()
 	{
+        //實做他就會變成一塊新的記憶體而不是binding的資料
+       // _vm = new CCustomerViewModel();
 		InitializeComponent();
-        loadData();
+        //所以要讓_vm的值等於binding的值
+        _vm = this.BindingContext as CCustomerViewModel;
 	}
-    int[] ids = new int[3];
-    string[] names = new string[3];
-    string[] phones = new string[3];
-    string[] emails = new string[3];
-    string[] adderss = new string[3];
-    
-    private void loadData()
-    {
-        ids[0] = 1;
-        names[0] = "Amy";
-        phones[0] = "095532145";
-        emails[0] = "sss@gmail.com";
-        adderss[0] = "Keelung";
-        ids[1] = 2;
-        names[1] = "Ben";
-        phones[1] = "0955447788";
-        emails[1] = "ddd@gmail.com";
-        adderss[1] = "TaiChung";
-        ids[2] = 3;
-        names[2] = "David";
-        phones[2] = "0933665482";
-        emails[2] = "eee@gmail.com";
-        adderss[2] = "Taipei";
-    }
 
     private void btnFisrt_Clicked(object sender, EventArgs e)
     {
-        _position = 0;
-        dispalyCustomerInfo();
+        _vm.moveFirst();
+        //dispalyCustomerInfo();
     }
    
     private void btnLast_Clicked(object sender, EventArgs e)
     {
-        _position = ids.Length - 1;
-        dispalyCustomerInfo();
+        _vm.moveLast();
+        //dispalyCustomerInfo();
     }
 
     private void btnPrevious_Clicked(object sender, EventArgs e)
     {
-        _position--;
-        if(_position <0)
-            _position = 0;
-        dispalyCustomerInfo();
+        _vm.movePrevious();
+        //dispalyCustomerInfo();
     }
 
     private void btnNext_Clicked(object sender, EventArgs e)
     {
-        _position++;
-        if (_position > ids.Length-1)
-            _position = ids.Length-1;
-        dispalyCustomerInfo();
+        _vm.moveNext();
+        //dispalyCustomerInfo();
 
     }
+
+    //功能由CCustomerViewModel中的public event PropertyChangedEventHandler PropertyChanged取代,由每個移動的方法去抓資料
     void dispalyCustomerInfo()
     {
-        txtID.Text = ids[_position].ToString();
-        txtName.Text = names[_position];
-        txtPhone.Text = phones[_position];
-        txtEmail.Text = emails[_position];
-        txtAddress.Text = adderss[_position];
+       CCustomers x = _vm.current;
+        txtID.Text = x.id.ToString();
+        txtName.Text = x.name;
+        txtPhone.Text = x.phone;
+        txtEmail.Text = x.email;
+        txtAddress.Text = x.address;
+    }
+
+    private void btnSearchClick(object sender, EventArgs e)
+    {
+        //按下搜尋扭到查詢頁面
+        Navigation.PushAsync(new PgKeyword());
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        App app = Application.Current as App;
+        if (!string.IsNullOrEmpty(app.keyword)) //從app拿到從pgkeyword給的值且keyword不是空值才做搜尋動作
+        {
+            //使用CCustomerHome的queryByKeyword方法來判斷是否包含值
+            //if (_vm.queryByKeyword(app.keyword) != null)
+            _vm.queryByKeyword(app.keyword);
+                //dispalyCustomerInfo();
+        }
+        if(app.selectedIndexOfCustomers >= 0)
+        {
+            _vm.moveTo(app.selectedIndexOfCustomers);
+            //dispalyCustomerInfo();
+        }
+    }
+    //當做返回建(即沒使用搜尋按鈕)應該將app裡的keyword清空避免重複搜尋
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        App app = Application.Current as App;
+        app.keyword = "";
+        app.selectedIndexOfCustomers = -1;
+        _vm.persistant();
+    }
+
+    private void btnList_Clicked(object sender, EventArgs e)
+    {
+        App app = Application.Current as App;
+        //把全部資料放到app的allCustomerForList
+        app.allCustomerForList = _vm.all;
+        Navigation.PushAsync(new PgList());
     }
 }

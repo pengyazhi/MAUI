@@ -16,7 +16,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
         
-        MainPage = new NavigationPage(new PgHttp());
+        MainPage = new NavigationPage(new PgEditor());
         selectedIndexOfCustomers = -1;
         selectedTodoSN = -1;
     }
